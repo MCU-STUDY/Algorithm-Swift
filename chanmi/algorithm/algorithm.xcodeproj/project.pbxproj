@@ -26,6 +26,9 @@
 		4A644BC22A7BC91800019B39 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A644BC52A7BC91800019B39 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4A644BCD2A7BC94200019B39 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		4A644BCF2A7BCE9C00019B39 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		4A644BD32A7C03E500019B39 /* IndexQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexQueue.swift; sourceTree = "<group>"; };
+		4A644BD52A7C093300019B39 /* DoubleArrayQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleArrayQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +70,28 @@
 		4A644BCC2A7BC93200019B39 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				4A644BCD2A7BC94200019B39 /* Stack.swift */,
+				4A644BD22A7BD3BA00019B39 /* Queue */,
+				4A644BD12A7BD3B500019B39 /* Stack */,
 			);
 			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		4A644BD12A7BD3B500019B39 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				4A644BCD2A7BC94200019B39 /* Stack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		4A644BD22A7BD3BA00019B39 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				4A644BCF2A7BCE9C00019B39 /* Queue.swift */,
+				4A644BD32A7C03E500019B39 /* IndexQueue.swift */,
+				4A644BD52A7C093300019B39 /* DoubleArrayQueue.swift */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
