@@ -38,3 +38,15 @@ struct Queue<T> {
     var peak: T? { queue.first }
 }
 
+var testArray = [1,1,2,2,4,5,6,7,8,9,9]
+/// 3번째 요소를 삭제하고 리턴
+/// mutating func
+//testArray.remove(at: 3)  return: 2  result: [1,1,2,4,5,6,7,8,9,9]
+
+/// 앞에서부터 7개 삭제
+/// mutating func
+//testArray.removeFirst(7)  return: X  restul: [7,8,9,9]
+
+/// 앞에서부터 7개삭제하고 남은 array 리턴(실제삭제X)
+/// 애초에 Array는 struct인데 mutating함수가 아님
+//testArray.dropFirst(7)  return: [7,8,9,9]  restul: [1,1,2,2,4,5,6,7,8,9,9]
