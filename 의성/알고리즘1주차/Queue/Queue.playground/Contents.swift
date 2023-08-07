@@ -119,5 +119,10 @@ struct QueueWithDoubleStack<T> {
     /// Queue의 비필수연산자
     var isEmpty: Bool { stackForDequeue.isEmpty && stackForEnqueue.isEmpty }
     var count: Int { stackForDequeue.count + stackForEnqueue.count }
-    var peak: T? { stackForEnqueue.isEmpty ? stackForDequeue.first : stackForEnqueue.last }
+    
+    /// 마지막요소
+    var peekLast: T? { stackForEnqueue.isEmpty ? stackForDequeue.first : stackForEnqueue.last }
+    
+    /// 첫번째 요소
+    var peekFirst: T? { stackForDequeue.isEmpty ? stackForEnqueue.first : stackForDequeue.last }
 }
