@@ -32,7 +32,7 @@
 		4A644BCF2A7BCE9C00019B39 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		4A644BD32A7C03E500019B39 /* IndexQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexQueue.swift; sourceTree = "<group>"; };
 		4A644BD52A7C093300019B39 /* DoubleArrayQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleArrayQueue.swift; sourceTree = "<group>"; };
-		4AE35E982A7FC68700465FD5 /* LinkedList(OneWay).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinkedList(OneWay).swift"; sourceTree = "<group>"; };
+		4AE35E982A7FC68700465FD5 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 		4ABF4F292A7E500200B5CF8E /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				4AE35E982A7FC68700465FD5 /* LinkedList(OneWay).swift */,
+				4AE35E982A7FC68700465FD5 /* LinkedList.swift */,
 				4A45A6382A81E05700736826 /* DoublyLinkedList.swift */,
 			);
 			path = LinkedList;
