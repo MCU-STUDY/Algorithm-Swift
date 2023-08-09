@@ -31,6 +31,8 @@ struct CircularLinkedList {
         newNode.prev = tail
         tail = newNode
         
+        /// Doubly Linked List에서
+        /// tail과 head만 연결시켜주면 된다
         tail?.next = head
         head?.prev = tail
     }
