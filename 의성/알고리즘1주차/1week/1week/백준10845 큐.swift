@@ -38,7 +38,7 @@ struct Queue {
         return returnValue ?? -1
     }
     
-    /// front를 emqueue로 잡을 경우에 경우의 수를 한가지더 고려해야함....굳이이렇게하진 않아도될듯싶다...
+    /// front를 enqueue로 잡을 경우에 경우의 수를 한가지더 고려해야함....굳이이렇게하진 않아도될듯싶다...
 //    var front: Int {
 //        if stackForEnqueue.isEmpty {
 //            return stackForDequeue.last ?? -1

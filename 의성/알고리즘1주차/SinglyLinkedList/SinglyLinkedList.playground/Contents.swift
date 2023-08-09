@@ -10,14 +10,14 @@ class Node<T> {
     }
 }
 
-struct SinglyLinkedList<T> {
+final class SinglyLinkedList<T> {
     /// 맨앞부터 순서대로 지나가야하므로 처음부분이라는 기준점이 필요하다
     private var head: Node<T>?
     
     /// 맨뒤에다가 element를 추가하는 경우
     /// 고려해야할 경우의 수
     /// 1. LinkedList에 아무것도 없는경우
-    mutating func append(_ element: T?) {
+    func append(_ element: T?) {
         /// LinkedList에 아무것도 없는 경우엔 header자체가 없는경우고 이러한 경우엔 header에다가 Node를 넣어주기만 하면된다
         /// 그리고 이런 경우엔 header에 Node만 넣고 함수를 종료시켜야하기때문에 return을 해준다
         if head == nil {
@@ -41,7 +41,7 @@ struct SinglyLinkedList<T> {
     /// 고려해야할 경우의 수
     /// 1. LinkedList에 아무것도 없는 경우
     /// 2. (알게된사실)0부터시작하는 range이기때문에 index가 0이면 `0..<-1`이 되어버려서 문제가 발생함 0일때는 따로 분기처리해줘야함
-    mutating func insert(element: T?, at index: Int) {
+    func insert(element: T?, at index: Int) {
         if head == nil {
             head = Node(value: element)
             return
@@ -70,7 +70,7 @@ struct SinglyLinkedList<T> {
     }
     
     /// 지우는 경우도 index를 가지고 insert하는 경우와 고려해야할 경우의 수는 동일하다
-    mutating func delete(at index: Int) {
+    func delete(at index: Int) {
         if head == nil { return }
         
         if index == 0 {

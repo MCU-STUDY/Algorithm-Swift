@@ -108,11 +108,11 @@ func solution(size: Int, values: [Int]) {
         /// 문제에서 내가 뽑아내고 싶은 요소의 index를 반환
         let valueIndex = testCircularLinkedList.findIndex(from: value)
         
-        /// 내가 찾는 요소의 index가 0이라는건 그냥 removeHead()를 실행시키면된다는뜻이다
-        if valueIndex == 0 {
-            testCircularLinkedList.removeHead()
-            continue
-        }
+//        /// 내가 찾는 요소의 index가 0이라는건 그냥 removeHead()를 실행시키면된다는뜻이다
+//        if valueIndex == 0 {
+//            testCircularLinkedList.removeHead()
+//            continue
+//        }
         
         /// 만약에 내가 뽑고 싶은 요소의 index가 오른쪽(tail쪽)에 위치한다면 오른쪽으로 움직여아하고 움직이는 횟수는 (전체인덱스-요소인덱스+1)번이다
         /// 다 움직이고나면 맨앞에 head를 지워주고 다음 반복을 위해 continue를 걸어준다

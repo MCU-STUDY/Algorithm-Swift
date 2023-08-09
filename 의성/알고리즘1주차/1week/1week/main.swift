@@ -89,6 +89,7 @@ func solution(size: Int, values: [Int]) {
     }
     
     for value in values {
+        /// O(n) -> O(1)
         let lastNodeIndex = testCircularLinkedList.lastNodeIndex()
         let indexCenter = lastNodeIndex / 2
         let valueIndex = testCircularLinkedList.findIndex(from: value)
