@@ -1,5 +1,5 @@
 //
-//  Queue.swift
+//  백준10845 큐.swift
 //  1week
 //
 //  Created by uiskim on 2023/08/07.

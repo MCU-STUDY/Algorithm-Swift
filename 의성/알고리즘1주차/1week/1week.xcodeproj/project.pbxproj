@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C079765F2A7B8BB4000F0391 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079765E2A7B8BB4000F0391 /* main.swift */; };
-		C0F278522A810A26004ECF63 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F278512A810A26004ECF63 /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +23,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C011528A2A83302000DDA0F3 /* 백준1082 회전하는큐.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준1082 회전하는큐.swift"; sourceTree = "<group>"; };
 		C079765B2A7B8BB4000F0391 /* 1week */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 1week; sourceTree = BUILT_PRODUCTS_DIR; };
 		C079765E2A7B8BB4000F0391 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		C07976652A7B8C45000F0391 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		C0F278512A810A26004ECF63 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		C07976652A7B8C45000F0391 /* 백준10828 스택.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준10828 스택.swift"; sourceTree = "<group>"; };
+		C0F278512A810A26004ECF63 /* 백준10845 큐.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준10845 큐.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				C079765E2A7B8BB4000F0391 /* main.swift */,
-				C07976652A7B8C45000F0391 /* Stack.swift */,
-				C0F278512A810A26004ECF63 /* Queue.swift */,
+				C07976652A7B8C45000F0391 /* 백준10828 스택.swift */,
+				C0F278512A810A26004ECF63 /* 백준10845 큐.swift */,
+				C011528A2A83302000DDA0F3 /* 백준1082 회전하는큐.swift */,
 			);
 			path = 1week;
 			sourceTree = "<group>";
@@ -126,7 +127,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C079765F2A7B8BB4000F0391 /* main.swift in Sources */,
-				C0F278522A810A26004ECF63 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

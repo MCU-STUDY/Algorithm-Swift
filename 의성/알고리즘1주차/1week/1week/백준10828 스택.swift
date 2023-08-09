@@ -1,5 +1,5 @@
 //
-//  Stack.swift
+//  백준10828 스택.swift
 //  1week
 //
 //  Created by uiskim on 2023/08/03.
