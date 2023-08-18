@@ -7,4 +7,4 @@
 
 import Foundation
 
-print("gg")
+print("hello world")
