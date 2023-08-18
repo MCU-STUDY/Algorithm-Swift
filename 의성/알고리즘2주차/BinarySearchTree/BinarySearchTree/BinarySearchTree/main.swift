@@ -154,6 +154,42 @@ final class BinarySearchTree {
         
         return true
     }
+    
+    /// 중위순회 구현
+    private func printInorder(node: BinarySearchTreeNode?) {
+        guard let node else { return }
+        printInorder(node: node.leftNode)
+        print(node.data, terminator: " ")
+        printInorder(node: node.rightNode)
+    }
+    
+    /// 전위순회 구현
+    private func printPreorder(node: BinarySearchTreeNode?) {
+        guard let node else { return }
+        print(node.data, terminator: " ")
+        printPreorder(node: node.leftNode)
+        printPreorder(node: node.rightNode)
+    }
+    
+    /// 후위순회 구현
+    private func printPostorder(node: BinarySearchTreeNode?) {
+        guard let node else { return }
+        printPostorder(node: node.leftNode)
+        printPostorder(node: node.rightNode)
+        print(node.data, terminator: " ")
+    }
+    
+    func printInorderResult() {
+        printInorder(node: self.rootNode)
+    }
+    
+    func printPostorderResult() {
+        printPostorder(node: self.rootNode)
+    }
+    
+    func printPreorderResult() {
+        printPreorder(node: self.rootNode)
+    }
 }
 
 
@@ -180,7 +216,7 @@ testTree.insert(18)
 testTree.rootNode?.asString()
 
 //testTree.printPreorderResult()
-//testTree.printInorderResult()
+testTree.printInorderResult()
 //testTree.printPostorderResult()
 
 
