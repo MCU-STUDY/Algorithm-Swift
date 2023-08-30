@@ -92,6 +92,7 @@ class DoublyLinkedList<T> {
     }
     
     /// tail로부터 삽입
+    /// 꼬리 관리???
     public func tailInsertIndex(index: Int, element: T) {
         if head == nil {
             head = Node(value: element, previous: nil, next: nil)
@@ -123,24 +124,61 @@ class DoublyLinkedList<T> {
         }
     }
     
-    public func removeIndex(index: Int) {
+    public func headRemoveIndex(index: Int) {
+        // 값이 없을 경우
         if head == nil {
             return
         }
         
         var currentNode = head
         
+        // head 지울 경우
         if index == 0 {
+            currentNode?.next?.previous = nil
             head = currentNode?.next
             return
         }
         
         for _ in 0..<index-1 {
-            if currentNode?.next?.next == nil { break }
+            if currentNode?.next == nil { break }
             currentNode = currentNode?.next
         }
         
         currentNode?.next = currentNode?.next?.next
+        currentNode?.next?.next?.previous = currentNode
+        
+        // 마지막 노드일 경우
+        if currentNode?.next == nil {
+            tail = currentNode
+        }
+    }
+    
+    public func tailRemoveIndex(index: Int) {
+        // 값이 없을 경우
+        if head == nil {
+            return
+        }
+        
+        var currentNode = tail
+        
+        // tail 지울 경우
+        if index == 0 {
+            currentNode?.previous?.next = nil
+            return
+        }
+        
+        for _ in 0..<index-1 {
+            if currentNode?.next == nil { break }
+            currentNode = currentNode?.next
+        }
+        
+        currentNode?.next = currentNode?.next?.next
+        currentNode?.next?.next?.previous = currentNode
+        
+        // 마지막 노드일 경우
+        if currentNode?.next == nil {
+            tail = currentNode
+        }
     }
     
     public func disPlayListItems() {
@@ -152,43 +190,36 @@ class DoublyLinkedList<T> {
     }
 }
 
-let linkedList = LinkedList<Int>()
-linkedList.append(element: 5)
-linkedList.append(element: 1)
+let linkedList = DoublyLinkedList<Int>()
+linkedList.append(element: 3)
+linkedList.append(element: 4)
 linkedList.disPlayListItems()
 print("😀😀😀😀😀😀😀😀😀😀")
-linkedList.headInsertIndex(index: 1, element: 5)
-linkedList.headInsertIndex(index: 0, element: 4)
-linkedList.headInsertIndex(index: 2, element: 6)
-linkedList.headInsertIndex(index: 3, element: 7)
+linkedList.headInsertIndex(index: 0, element: 5)
+linkedList.headInsertIndex(index: 1, element: 6)
+linkedList.headInsertIndex(index: 2, element: 7)
+linkedList.headInsertIndex(index: 3, element: 8)
 linkedList.disPlayListItems()
 print("😀😀😀😀😀😀😀😀😀😀")
-linkedList.tailInsertIndex(index: 1, element: 5)
-linkedList.tailInsertIndex(index: 2, element: 5)
-linkedList.tailInsertIndex(index: 3, element: 5)
+linkedList.headRemoveIndex(index: 3)
+linkedList.headRemoveIndex(index: 2)
+linkedList.headRemoveIndex(index: 1)
+linkedList.headRemoveIndex(index: 0)
 linkedList.disPlayListItems()
 print("😀😀😀😀😀😀😀😀😀😀")
 
 /*
- 5
- 1
- 5
- 1
- 😀😀😀😀😀😀😀😀😀😀
+ 3
  4
+ 😀😀😀😀😀😀😀😀😀😀
  5
  6
  7
- 5
- 1
- 5
- 1
- 😀😀😀😀😀😀😀😀😀😀
+ 8
+ 3
  4
- 6
- 5
- 1
- 5
- 1
+ 😀😀😀😀😀😀😀😀😀😀
+ 3
+ 4
+ 😀😀😀😀😀😀😀😀😀😀
  */
-
