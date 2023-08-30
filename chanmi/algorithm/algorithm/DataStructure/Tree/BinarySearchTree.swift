@@ -81,6 +81,7 @@ final class BinarySearchTree<T: Comparable> {
         var currentNode: Node? = root
         
         // nil일 때 while문 통과
+        // 삭제하려는 값을 찾는 중 ...
         while let node = currentNode {
             if node.data == element {
                 // 값을 찾음
@@ -187,8 +188,8 @@ final class BinarySearchTree<T: Comparable> {
             return
         }
         
-        print(node.data)
         inOrder(node: node.left)
+        print(node.data)
         inOrder(node: node.right)
     }
     
@@ -198,9 +199,9 @@ final class BinarySearchTree<T: Comparable> {
             return
         }
         
-        print(node.data)
         postOrder(node: node.left)
         postOrder(node: node.right)
+        print(node.data)
     }
     
     func drawDiagram() {
