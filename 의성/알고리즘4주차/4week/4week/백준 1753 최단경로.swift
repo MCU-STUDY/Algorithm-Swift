@@ -7,82 +7,83 @@
 
 import Foundation
 
+/// 백준 최단경로
+/// 다익스트라
+
 struct Heap<T: Comparable> {
     private var heap: [T] = []
-    private var comparer: (T, T) ->  Bool
+    private var comparer: (T, T) -> Bool
     
     init(comparer: @escaping (T, T) -> Bool) {
         self.comparer = comparer
     }
     
     mutating func insert(_ input: T) {
-        /// 비어있다면
         if heap.isEmpty {
             heap.append(input)
             heap.append(input)
             return
         }
-        /// 비어있지 않다면
+        
         heap.append(input)
         isMoveUp(index: heap.count - 1)
-        
     }
     
     private mutating func isMoveUp(index: Int) {
-        var index = index
-        /// 만약에 1번노드가 아니고 현재노드가 부모노드보다 ~ 하다면 반복
-        while index > 1 && comparer(heap[index], heap[index/2]) {
-            heap.swapAt(index, index/2)
-            index /= 2
+        var currentindex = index
+        /// ✅
+        while currentindex > 1 && comparer(heap[currentindex], heap[currentindex / 2]) {
+            heap.swapAt(currentindex, currentindex / 2)
+            currentindex /= 2
         }
     }
     
-    /// removeFirst는 O(n)이기때문에
-    /// removeLast를 사용하려면 1번노드랑 먼저 바꾸고나서 마지막걸 지워주면 된다
     mutating func pop() -> T? {
-        if heap.count < 2 { return nil }
+        if heap.count < 2 {
+            return nil
+        }
         heap.swapAt(1, heap.count - 1)
-        /// 처음게 마지막으로 가서 지워지고 return
         let returnValue = heap.removeLast()
         isMoveDown(index: 1)
         return returnValue
     }
     
     private mutating func isMoveDown(index: Int) {
-        var swapIndex = index
-        let left = index * 2
-        let right = index * 2 + 1
+        var currentIndex = index
+        let left = currentIndex * 2
+        let right = currentIndex * 2 + 1
+        /// ✅
         var isSwap = false
         
-        if left < heap.endIndex && comparer(heap[left], heap[swapIndex]) {
-            swapIndex = left
+        if left < heap.endIndex && comparer(heap[left], heap[currentIndex]) {
+            currentIndex = left
             isSwap = true
         }
         
-        if right < heap.endIndex && comparer(heap[right], heap[swapIndex]) {
-            swapIndex = right
+        if right < heap.endIndex && comparer(heap[right], heap[currentIndex]) {
+            currentIndex = right
             isSwap = true
         }
         
+        /// ✅
         if isSwap {
-            heap.swapAt(swapIndex, index)
-            isMoveDown(index: swapIndex)
+            heap.swapAt(index, currentIndex)
+            isMoveDown(index: currentIndex)
         }
-        
     }
     
     var isEmpty: Bool {
         return heap.count < 2
     }
-    
 }
 
 struct Node: Comparable {
     static func < (lhs: Node, rhs: Node) -> Bool {
-        return lhs.priority < rhs.priority
+        lhs.weight < rhs.weight
     }
-    var node = 0
-    var priority = 0
+    
+    var value = 0
+    var weight = 0
 }
 
 let commands = readLine()!.split(separator: " ").map{Int(String($0))!}
@@ -90,40 +91,41 @@ let numberOfNodes = commands[0]
 let numberOfLines = commands[1]
 let start = Int(readLine()!)!
 
-var graph: [[Node]] = Array(repeating: [], count: numberOfNodes+1)
+var graph: [[Node]] = Array(repeating: [], count: numberOfNodes + 1)
+
 for _ in 0..<numberOfLines {
     let input = readLine()!.split(separator: " ").map{Int(String($0))!}
     let start = input[0]
     let end = input[1]
     let weight = input[2]
-    graph[start].append(Node(node: end, priority: weight))
+    graph[start].append(Node(value: end, weight: weight))
 }
 
-var distances: [Int] = Array(repeating: Int.max, count: numberOfNodes+1)
+var distances: [Int] = Array(repeating: Int.max, count: numberOfNodes + 1)
 
-func solution(start: Int) {
-    var heap = Heap<Node>(comparer: <)
+func dijkstra(start: Int) {
+    /// ✅ 다익스트라는 최소힙
+    var maxHeap = Heap<Node>(comparer: <)
     distances[start] = 0
-    heap.insert(Node(node: start, priority: 0))
-    
-    while !heap.isEmpty {
-        guard let pop = heap.pop() else { break }
-        if distances[pop.node] < pop.priority {
+    maxHeap.insert(Node(value: start, weight: 0))
+
+    while !maxHeap.isEmpty {
+        guard let popped = maxHeap.pop() else { break }
+        if distances[popped.value] < popped.weight {
             continue
         }
-        
-        for next in graph[pop.node] {
-            let distance = pop.priority + next.priority
-            if distance < distances[next.node] {
-                distances[next.node] = distance
-                heap.insert(Node(node: next.node, priority: distance))
+
+        for nextNode in graph[popped.value] {
+            let distance = nextNode.weight + popped.weight
+            if distance < distances[nextNode.value] {
+                distances[nextNode.value] = distance
+                maxHeap.insert(Node(value: nextNode.value, weight: distance))
             }
         }
-        
     }
 }
 
-solution(start: start)
+dijkstra(start: start)
 
 distances[1...].forEach { element in
     if element == Int.max {
