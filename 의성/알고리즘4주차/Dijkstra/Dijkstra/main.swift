@@ -96,56 +96,27 @@ struct Node: Comparable {
     var priority = 0
 }
 
-//func dijkstra(graph: [String: [String: Int]], start: String) -> [String: Int] {
-//    var distances: [String: Int] = [:]
-//    var maxHeap = Heap<Node>(comparer: >)
-//    maxHeap.insert(Node(node: start, priority: 0))
-//
-//    graph.keys.forEach { key in
-//        let value = key == start ? 0 : 10000
-//        distances.updateValue(value, forKey: key)
-//    }
-//
-//    while !maxHeap.isEmpty {
-//        guard let popValue = maxHeap.pop() else { break }
-//        /// 더 멀리돌아갈 필요가없음
-//        /// 현재저장된 거리 < 새로운경로의거리
-//        if distances[popValue.node]! < popValue.priority { continue }
-//
-//        for (node, priority) in graph[popValue.node]! {
-//            let distance = priority + popValue.priority
-//            if distance < distances[node]! {
-//                distances[node] = distance
-//                maxHeap.insert(Node(node: node, priority: priority))
-//            }
-//        }
-//    }
-//    return distances
-//}
-
-func dijkstra(graph: [String: [String: Int]], start: String) ->  [String: Int] {
+func dijkstra(graph: [String: [String: Int]], start: String) -> [String: Int] {
     var distances: [String: Int] = [:]
-//    var priorityQueue = MaxHeap(NodePriority.init(node: start, priority: 0))
-    var priorityQueue = Heap<Node>(comparer: >)
-    priorityQueue.insert(Node(node: start, priority: 0))
-    
-    for key in graph.keys {
-        let value = key == start ? 0 : 2147483647
+    var maxHeap = Heap<Node>(comparer: >)
+    maxHeap.insert(Node(node: start, priority: 0))
+
+    graph.keys.forEach { key in
+        let value = key == start ? 0 : 10000
         distances.updateValue(value, forKey: key)
     }
-    
-    while !priorityQueue.isEmpty {
-        guard let popped = priorityQueue.pop() else { break }
-        
-        if distances[popped.node]! < popped.priority {
-            continue
-        }
-        
-        for (node, priority) in graph[popped.node]! {
-            let distance = priority + popped.priority
+
+    while !maxHeap.isEmpty {
+        guard let popValue = maxHeap.pop() else { break }
+        /// 더 멀리돌아갈 필요가없음
+        /// 현재저장된 거리 < 새로운경로의거리
+        if distances[popValue.node]! < popValue.priority { continue }
+
+        for (node, priority) in graph[popValue.node]! {
+            let distance = priority + popValue.priority
             if distance < distances[node]! {
                 distances[node] = distance
-                priorityQueue.insert(Node.init(node: node, priority: distance))
+                maxHeap.insert(Node(node: node, priority: priority))
             }
         }
     }
