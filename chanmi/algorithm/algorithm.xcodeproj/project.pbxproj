@@ -24,6 +24,11 @@
 
 /* Begin PBXFileReference section */
 		4A1882F42A8667250088F590 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		4A1A29F32A9F8447001BAFAA /* boj_2178.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_2178.swift; sourceTree = "<group>"; };
+		4A1A29F42A9F9585001BAFAA /* boj_14940.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_14940.swift; sourceTree = "<group>"; };
+		4A1A29F62AA0B7F4001BAFAA /* Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		4A1A29F92AA0FC09001BAFAA /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
+		4A1A29FA2AA1A152001BAFAA /* boj_1753.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_1753.swift; sourceTree = "<group>"; };
 		4A45A6362A81E02800736826 /* boj_10828.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_10828.swift; sourceTree = "<group>"; };
 		4A45A6382A81E05700736826 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
 		4A45A6392A81EC9400736826 /* boj_10845.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_10845.swift; sourceTree = "<group>"; };
@@ -68,6 +73,22 @@
 			path = Tree;
 			sourceTree = "<group>";
 		};
+		4A1A29F52AA0B7E5001BAFAA /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				4A1A29F62AA0B7F4001BAFAA /* Hash.swift */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
+		4A1A29F82AA0FBFA001BAFAA /* Dijkstra */ = {
+			isa = PBXGroup;
+			children = (
+				4A1A29F92AA0FC09001BAFAA /* Dijkstra.swift */,
+			);
+			path = Dijkstra;
+			sourceTree = "<group>";
+		};
 		4A45A6352A81E00E00736826 /* Boj */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +105,9 @@
 				4A5F72C52A9854F000BEECB2 /* boj_2606.swift */,
 				4A5F72C72A985B5300BEECB2 /* boj_15649.swift */,
 				4A5F72C82A9865CA00BEECB2 /* boj_1182.swift */,
+				4A1A29F32A9F8447001BAFAA /* boj_2178.swift */,
+				4A1A29F42A9F9585001BAFAA /* boj_14940.swift */,
+				4A1A29FA2AA1A152001BAFAA /* boj_1753.swift */,
 			);
 			path = Boj;
 			sourceTree = "<group>";
@@ -117,6 +141,8 @@
 		4A644BCC2A7BC93200019B39 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				4A1A29F82AA0FBFA001BAFAA /* Dijkstra */,
+				4A1A29F52AA0B7E5001BAFAA /* Hash */,
 				4AC0471A2A8EA31600EBDC0E /* Heap */,
 				4A1882F32A8667100088F590 /* Tree */,
 				4ABF4F292A7E500200B5CF8E /* LinkedList */,
