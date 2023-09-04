@@ -43,6 +43,13 @@ func dfs(_ input: [Int], start: Int){
     ///
     /// start가 1일때 재귀가 끝나서 start가 2가됨
     /// [-2]가 들어가고 start는 2가 됨
+    ///
+    /// 얘도 똑같은걸 뽑을순없어 그러니까 isVisited가 필요하고 애초에 graph모양이 아니라서 각각의 인접노드를 `for i in graph[index]`이렇게 줄수가 없어
+    /// 모두가 공통의 value를 가진 노드를 가지고있어서 value가 같더라도 다른 node취급을 해줘야해 그래서 visited를 false로 바꿔줘야해
+    /// 애초에 graph모양이 아니라서 우리가 인접노드를 어거지로 넣어주는데
+    /// -7같은 경우는 인접노드가 [-3, -2, 5, 8]이어야하고
+    /// -3같은 경우는 인접노드가 [-2, 5, 8]이어야해
+    /// 즉 시작점이 다르지만 끝점은 같은 list range를 in 뒤에다가 넣어줘야해
     for i in start..<arr.count {
         if !visited[i]{
             visited[i] = true
