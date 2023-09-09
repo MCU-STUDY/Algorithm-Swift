@@ -26,6 +26,7 @@
 		C0B736C32AAC4ECA00257F9C /* 6week */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 6week; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B736C62AAC4ECA00257F9C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C0B736CD2AAC4EDE00257F9C /* 프로그래머스 모음사전.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 모음사전.swift"; sourceTree = "<group>"; };
+		C0B736CF2AAC4F1900257F9C /* 프로그래머스 전력망을 둘로 나누기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 전력망을 둘로 나누기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 			children = (
 				C0B736C62AAC4ECA00257F9C /* main.swift */,
 				C0B736CD2AAC4EDE00257F9C /* 프로그래머스 모음사전.swift */,
+				C0B736CF2AAC4F1900257F9C /* 프로그래머스 전력망을 둘로 나누기.swift */,
 			);
 			path = 6week;
 			sourceTree = "<group>";
