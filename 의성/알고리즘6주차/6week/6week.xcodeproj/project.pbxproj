@@ -32,6 +32,7 @@
 		C0B736D52AAC4F8E00257F9C /* 프로그래머스 타겟 넘버.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 타겟 넘버.swift"; sourceTree = "<group>"; };
 		C0B736D72AAC4FB000257F9C /* 프로그래머스 네트워크.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 네트워크.swift"; sourceTree = "<group>"; };
 		C0B736D92AAC4FD400257F9C /* 프로그래머스 단어변환.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 단어변환.swift"; sourceTree = "<group>"; };
+		C0B736DB2AAC4FEF00257F9C /* 프로그래머스 괄호 회전하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 괄호 회전하기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				C0B736C62AAC4ECA00257F9C /* main.swift */,
+				C0B736DB2AAC4FEF00257F9C /* 프로그래머스 괄호 회전하기.swift */,
 				C0B736D92AAC4FD400257F9C /* 프로그래머스 단어변환.swift */,
 				C0B736D72AAC4FB000257F9C /* 프로그래머스 네트워크.swift */,
 				C0B736D52AAC4F8E00257F9C /* 프로그래머스 타겟 넘버.swift */,
