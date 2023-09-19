@@ -27,6 +27,7 @@
 		C0856B522AB980C50026D9F8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C0856B592AB981420026D9F8 /* 프로그래머스 여행경로.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 여행경로.swift"; sourceTree = "<group>"; };
 		C0856B5B2AB981660026D9F8 /* 프로그래머스 가장 먼 노드.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 가장 먼 노드.swift"; sourceTree = "<group>"; };
+		C0856B5D2AB981950026D9F8 /* 프로그래머스 퍼즐조각채우기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 퍼즐조각채우기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				C0856B522AB980C50026D9F8 /* main.swift */,
+				C0856B5D2AB981950026D9F8 /* 프로그래머스 퍼즐조각채우기.swift */,
 				C0856B592AB981420026D9F8 /* 프로그래머스 여행경로.swift */,
 				C0856B5B2AB981660026D9F8 /* 프로그래머스 가장 먼 노드.swift */,
 			);
