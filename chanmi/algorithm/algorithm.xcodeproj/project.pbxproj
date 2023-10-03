@@ -23,12 +23,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A0123682AAAF89C00E09646 /* pg_84512.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_84512.swift; sourceTree = "<group>"; };
+		4A0123692AAB089B00E09646 /* pg_86971.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_86971.swift; sourceTree = "<group>"; };
+		4A01236A2AAB12C300E09646 /* pg_87946.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_87946.swift; sourceTree = "<group>"; };
+		4A01236B2AAB1A6D00E09646 /* pg_42839.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_42839.swift; sourceTree = "<group>"; };
+		4A01236C2AAB6CCC00E09646 /* pg_43165.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_43165.swift; sourceTree = "<group>"; };
+		4A01236D2AAB733200E09646 /* pg_43162.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_43162.swift; sourceTree = "<group>"; };
+		4A01236E2AAB815D00E09646 /* pg_43163.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_43163.swift; sourceTree = "<group>"; };
 		4A1882F42A8667250088F590 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		4A1A29F32A9F8447001BAFAA /* boj_2178.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_2178.swift; sourceTree = "<group>"; };
 		4A1A29F42A9F9585001BAFAA /* boj_14940.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_14940.swift; sourceTree = "<group>"; };
 		4A1A29F62AA0B7F4001BAFAA /* Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
 		4A1A29F92AA0FC09001BAFAA /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		4A1A29FA2AA1A152001BAFAA /* boj_1753.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_1753.swift; sourceTree = "<group>"; };
+		4A3F243D2AB3507900117F1B /* pg_43164.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_43164.swift; sourceTree = "<group>"; };
+		4A3F243E2AB3572F00117F1B /* pg_49189.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_49189.swift; sourceTree = "<group>"; };
+		4A3F24402AB3835200117F1B /* pg_17682.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_17682.swift; sourceTree = "<group>"; };
+		4A3F24422AB3FDB500117F1B /* insertSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insertSort.swift; sourceTree = "<group>"; };
+		4A3F24432AB408BB00117F1B /* bubleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bubleSort.swift; sourceTree = "<group>"; };
+		4A3F24442AB56C2D00117F1B /* pg_도형.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "pg_도형.swift"; sourceTree = "<group>"; };
 		4A45A6362A81E02800736826 /* boj_10828.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_10828.swift; sourceTree = "<group>"; };
 		4A45A6382A81E05700736826 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
 		4A45A6392A81EC9400736826 /* boj_10845.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boj_10845.swift; sourceTree = "<group>"; };
@@ -65,6 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0123642AAAF87900E09646 /* programmers */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F243F2AB3834100117F1B /* Level_1 */,
+				4A0123672AAAF88800E09646 /* Level_2 */,
+				4A3F243C2AB3506C00117F1B /* Level_3 */,
+			);
+			path = programmers;
+			sourceTree = "<group>";
+		};
+		4A0123672AAAF88800E09646 /* Level_2 */ = {
+			isa = PBXGroup;
+			children = (
+				4A0123682AAAF89C00E09646 /* pg_84512.swift */,
+				4A0123692AAB089B00E09646 /* pg_86971.swift */,
+				4A01236A2AAB12C300E09646 /* pg_87946.swift */,
+				4A01236B2AAB1A6D00E09646 /* pg_42839.swift */,
+				4A01236C2AAB6CCC00E09646 /* pg_43165.swift */,
+				4A01236D2AAB733200E09646 /* pg_43162.swift */,
+				4A01236E2AAB815D00E09646 /* pg_43163.swift */,
+			);
+			path = Level_2;
+			sourceTree = "<group>";
+		};
 		4A1882F32A8667100088F590 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +124,33 @@
 				4A1A29F92AA0FC09001BAFAA /* Dijkstra.swift */,
 			);
 			path = Dijkstra;
+			sourceTree = "<group>";
+		};
+		4A3F243C2AB3506C00117F1B /* Level_3 */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F243D2AB3507900117F1B /* pg_43164.swift */,
+				4A3F243E2AB3572F00117F1B /* pg_49189.swift */,
+				4A3F24442AB56C2D00117F1B /* pg_도형.swift */,
+			);
+			path = Level_3;
+			sourceTree = "<group>";
+		};
+		4A3F243F2AB3834100117F1B /* Level_1 */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F24402AB3835200117F1B /* pg_17682.swift */,
+			);
+			path = Level_1;
+			sourceTree = "<group>";
+		};
+		4A3F24412AB3FD9F00117F1B /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A3F24422AB3FDB500117F1B /* insertSort.swift */,
+				4A3F24432AB408BB00117F1B /* bubleSort.swift */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 		4A45A6352A81E00E00736826 /* Boj */ = {
@@ -131,6 +195,7 @@
 		4A644BC42A7BC91800019B39 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				4A0123642AAAF87900E09646 /* programmers */,
 				4A45A6352A81E00E00736826 /* Boj */,
 				4A644BCC2A7BC93200019B39 /* DataStructure */,
 				4A644BC52A7BC91800019B39 /* main.swift */,
@@ -141,6 +206,7 @@
 		4A644BCC2A7BC93200019B39 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				4A3F24412AB3FD9F00117F1B /* Sort */,
 				4A1A29F82AA0FBFA001BAFAA /* Dijkstra */,
 				4A1A29F52AA0B7E5001BAFAA /* Hash */,
 				4AC0471A2A8EA31600EBDC0E /* Heap */,
