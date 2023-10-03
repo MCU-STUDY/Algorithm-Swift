@@ -52,6 +52,7 @@
 		B50886412ACBE1230094F4EC /* 괄호 회전하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "괄호 회전하기.swift"; sourceTree = "<group>"; };
 		B50886432ACBE1390094F4EC /* 시소 짝꿍.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "시소 짝꿍.swift"; sourceTree = "<group>"; };
 		B50886452ACBE1FF0094F4EC /* 여행 경로.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "여행 경로.swift"; sourceTree = "<group>"; };
+		B50886472ACBE2190094F4EC /* 가장 먼 노드.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "가장 먼 노드.swift"; sourceTree = "<group>"; };
 		B56759842A7ACCAF0004E5DD /* algo-swift-MCU */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "algo-swift-MCU"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56759B32A82A9B80004E5DD /* stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stack.swift; sourceTree = "<group>"; };
 		B56759B42A82A9B80004E5DD /* stack-linkedlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "stack-linkedlist.swift"; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 				B50886412ACBE1230094F4EC /* 괄호 회전하기.swift */,
 				B50886432ACBE1390094F4EC /* 시소 짝꿍.swift */,
 				B50886452ACBE1FF0094F4EC /* 여행 경로.swift */,
+				B50886472ACBE2190094F4EC /* 가장 먼 노드.swift */,
 			);
 			name = "프로그래머스";
 			path = "프로그래머스";
