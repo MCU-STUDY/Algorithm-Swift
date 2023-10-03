@@ -58,6 +58,8 @@
 		B50886502ACBE2E00094F4EC /* 뉴스 클러스터링.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "뉴스 클러스터링.swift"; sourceTree = "<group>"; };
 		B50886532ACBE3240094F4EC /* 삽입 정렬.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "삽입 정렬.swift"; sourceTree = "<group>"; };
 		B50886552ACBE3340094F4EC /* 버블 정렬.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "버블 정렬.swift"; sourceTree = "<group>"; };
+		B50886582ACBE3890094F4EC /* 감시.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "감시.swift"; sourceTree = "<group>"; };
+		B508865A2ACBE3B30094F4EC /* 스티커 붙이기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "스티커 붙이기.swift"; sourceTree = "<group>"; };
 		B56759842A7ACCAF0004E5DD /* algo-swift-MCU */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "algo-swift-MCU"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56759B32A82A9B80004E5DD /* stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stack.swift; sourceTree = "<group>"; };
 		B56759B42A82A9B80004E5DD /* stack-linkedlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "stack-linkedlist.swift"; sourceTree = "<group>"; };
@@ -144,6 +146,16 @@
 			path = "정렬";
 			sourceTree = "<group>";
 		};
+		B50886572ACBE37E0094F4EC /* 구현 */ = {
+			isa = PBXGroup;
+			children = (
+				B50886582ACBE3890094F4EC /* 감시.swift */,
+				B508865A2ACBE3B30094F4EC /* 스티커 붙이기.swift */,
+			);
+			name = "구현";
+			path = "구현";
+			sourceTree = "<group>";
+		};
 		B567597B2A7ACCAF0004E5DD = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,7 @@
 		B56759862A7ACCAF0004E5DD /* algo-swift-MCU */ = {
 			isa = PBXGroup;
 			children = (
+				B50886572ACBE37E0094F4EC /* 구현 */,
 				B50886522ACBE3100094F4EC /* 정렬 */,
 				B50886302ACBE0810094F4EC /* 프로그래머스 */,
 				B50886232ACBDEDB0094F4EC /* 그래프 탐색 */,
