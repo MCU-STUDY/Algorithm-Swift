@@ -30,8 +30,6 @@ func solution(_ begin:String, _ target:String, _ words:[String]) -> Int {
                     }
                 }
             }
-            
-            
             index += 1
         }
         return 0
