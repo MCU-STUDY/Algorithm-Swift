@@ -68,3 +68,55 @@ func solution(_ cards:[Int]) -> Int {
 
     return answer
 }
+
+func solution2(_ cards:[Int]) -> Int {
+
+    var visited = Array(repeating: false, count: cards.count)
+
+    var answer: [Int] = []
+
+    for i in 0..<cards.count {
+        if visited[i] { continue } // [1] 하단 설명주석 참고
+
+        var pick = cards[i] - 1
+        var cnt = 0
+
+        while !visited[pick] {
+            visited[pick] = true
+            pick = cards[pick] - 1
+            cnt += 1
+        }
+        answer.append(cnt)
+    }
+
+    answer.sort(by: >) // 최대값을 구하기 위해서 정렬 필요.
+
+    // 2개보다 작으면 그룹이 1개라는 뜻.
+    // 그룹이 1개라는 뜻은 처음 카드를 뽑는 과정에서 모든 상자를 열었다는 뜻이므로
+    // 점수 0점 (문제에 제시된 조건)
+    return answer.count < 2 ? 0 : answer[0] * answer[1]
+
+}
+/*
+ 설명주석[1]:
+ 이렇게 하는 이유는
+ [8,6,3,7,2,5,1,4] 를 기준으로 1번 상자(8)번부터 시작하면
+ 1번상자(8)
+ 8번상자(4)
+ 4번상자(7)
+ 7번상자(1)
+ 1번상자 이미 열려있으므로 1번 그룹 끝 => 그룹1: [1,4,7,8]
+ 이런식으로 진행됩니다.
+
+ 그런데 이 경우는 해당 그룹의 다른 어떤 상자를 먼저 고른다해도 똑같은 결과로 귀결됩니다.
+ 예를 들어 4번 상자를 먼저 연다 생각하고 진행해보겠습니다.
+ 4번 상자(7)
+ 7번상자(1)
+ 1번상자(8)
+ 8번상자(4)
+ 4번 상자 이미 열려있으므로 끝 => 그룹1: [1,4,7,8]
+
+ 그렇기 때문에 while문(뽑는 로직)을 한번 돌고 난 이후에 방문 처리가 된 것은 과감하게 continue로 넘어가도 됩니다.
+*/
+
+
