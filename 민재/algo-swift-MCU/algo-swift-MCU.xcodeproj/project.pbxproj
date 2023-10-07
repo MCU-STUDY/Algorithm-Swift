@@ -19,6 +19,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B50093772ACFDD8600A398C8 /* 가장 큰 정사각형 찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "가장 큰 정사각형 찾기.swift"; sourceTree = "<group>"; };
+		B50093792ACFDDD000A398C8 /* 혼자놀기의 달인.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "혼자놀기의 달인.swift"; sourceTree = "<group>"; };
 		B508861B2ACBDE1D0094F4EC /* Queue-Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Queue-Array.swift"; sourceTree = "<group>"; };
 		B508861C2ACBDE1D0094F4EC /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		B508861D2ACBDE1D0094F4EC /* 10845_큐.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "10845_큐.swift"; sourceTree = "<group>"; };
@@ -131,6 +133,8 @@
 				B50886842ACE7D080094F4EC /* 3진법 뒤집기.swift */,
 				B50886822ACE5E450094F4EC /* 파일명정리.swift */,
 				B50886802ACE56B90094F4EC /* 멀리뛰기.swift */,
+				B50093772ACFDD8600A398C8 /* 가장 큰 정사각형 찾기.swift */,
+				B50093792ACFDDD000A398C8 /* 혼자놀기의 달인.swift */,
 			);
 			name = "프로그래머스";
 			path = "프로그래머스";
