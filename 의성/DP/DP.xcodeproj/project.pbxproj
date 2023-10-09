@@ -32,6 +32,7 @@
 		C0A8715E2AD2B4D4005FFD48 /* 백준 설탕배달.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준 설탕배달.swift"; sourceTree = "<group>"; };
 		C0A871602AD367E5005FFD48 /* 백준 MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준 MaximumSubarray.swift"; sourceTree = "<group>"; };
 		C0A871622AD3C84B005FFD48 /* 프로그래머스 가장긴팰린드롬.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스 가장긴팰린드롬.swift"; sourceTree = "<group>"; };
+		C0A871642AD3CC37005FFD48 /* 백준 팰린드롬?.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준 팰린드롬?.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A8714F2AD255C7005FFD48 /* main.swift */,
+				C0A871642AD3CC37005FFD48 /* 백준 팰린드롬?.swift */,
 				C0A871622AD3C84B005FFD48 /* 프로그래머스 가장긴팰린드롬.swift */,
 				C0A871602AD367E5005FFD48 /* 백준 MaximumSubarray.swift */,
 				C0A8715E2AD2B4D4005FFD48 /* 백준 설탕배달.swift */,
