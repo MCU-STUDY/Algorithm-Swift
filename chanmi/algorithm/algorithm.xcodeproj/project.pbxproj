@@ -89,6 +89,7 @@
 		4AE1A8CB2AE21CEC00F542EE /* pg_87390.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_87390.swift; sourceTree = "<group>"; };
 		4AE1A8CC2AE52AD000F542EE /* pg_67257.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_67257.swift; sourceTree = "<group>"; };
 		4AE1A8CD2AE5454500F542EE /* pg_12952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_12952.swift; sourceTree = "<group>"; };
+		4AE1A8CE2AE6C30D00F542EE /* pg_42892.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg_42892.swift; sourceTree = "<group>"; };
 		4AE35E982A7FC68700465FD5 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		4AE8D1DA2A83498D00DDA9B9 /* CircleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +178,7 @@
 				4AC00ED82AD393F6009230DA /* pg_12987.swift */,
 				4A52DD8E2ADA73DD00858230 /* pg_49191.swift */,
 				4A784AEB2AE0EEDF00CFBDDA /* pg_540654.swift */,
+				4AE1A8CE2AE6C30D00F542EE /* pg_42892.swift */,
 			);
 			path = Level_3;
 			sourceTree = "<group>";
