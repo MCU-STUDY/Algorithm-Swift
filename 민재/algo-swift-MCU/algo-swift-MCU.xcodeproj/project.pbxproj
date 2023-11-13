@@ -206,6 +206,7 @@
 				B5E78DED2B00D6EA00EA67A2 /* LIS.swift */,
 				B5E78DEF2B01AD9400EA67A2 /* 줄세우기.swift */,
 				B5E78DF12B01BA7E00EA67A2 /* 전깃줄.swift */,
+				B5E78DFC2B02A09200EA67A2 /* 광고삽입.swift */,
 			);
 			name = "프로그래머스";
 			path = "프로그래머스";
