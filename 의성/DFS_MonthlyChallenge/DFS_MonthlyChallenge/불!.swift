@@ -49,6 +49,7 @@ func bfs() -> Int {
     var queue: [(String, Int, Int, Int)] = [("J", jihoonPosition[0], jihoonPosition[1], 0)]
     firePositions.forEach { queue.append(("F", $0[0], $0[1], 0)) }
     var index = 0
+    isVisited[jihoonPosition[0]][jihoonPosition[1]] = true
     
     while queue.count > index {
         let type = queue[index].0
@@ -56,7 +57,7 @@ func bfs() -> Int {
         let x = queue[index].2
         let depth = queue[index].3
         
-        isVisited[y][x] = true
+//        isVisited[y][x] = true
         
         for dir in directions {
             let afterY = y+dir.0
